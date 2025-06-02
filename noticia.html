@@ -1,10 +1,18 @@
-<!--a. Título principal
+<!--
 
-b. Subtítulo descrevendo a notícia em mais detalhes
+Prática. Estenda a página noticias.html implementada no exercício "elementos textuais", incluindo os seguintes containers:
 
-c. Pelo menos quatro parágrafos contendo o texto da notícia
+a. Um <header> que irá mostrar o título e um logo do portal de notícias;
 
-d. A aplicação de pelo menos 6 elementos de formatação </!-->
+b. Um <footer> que irá incluir uma lista de links para redes sociais;
+
+c. Um <main> que irá englobar todo conteúdo principal da página. Isto é,
+
+as notícias propriamente ditas;
+
+d. Cada notícia deverá ser declarada dentro de um <article> 
+    
+</!-->
 
 
 
@@ -14,8 +22,14 @@ d. A aplicação de pelo menos 6 elementos de formatação </!-->
         <title>Globo News</title>
     </head>
     <body>
-        <h1>Menos de R$ 3 mil, adaptado do uso civil</h1>
-        <h2>Como é o drone ucraniano que impôs prejuízo de US$ 7 bilhões à Rússia</h2>
+        <header>
+            <img src="https://picsum.photos/50" />
+            <h1>Globo News</h1>
+        </header>
+        <main>
+            <article>
+     <h2>Menos de R$ 3 mil, adaptado do uso civil</h2>
+        <h3>Como é o drone ucraniano que impôs prejuízo de US$ 7 bilhões à Rússia</h3>
 
         <p>
             Em uma das operações mais ousadas da guerra entre com a Rússia, a Ucrânia 
@@ -38,7 +52,39 @@ d. A aplicação de pelo menos 6 elementos de formatação </!-->
             o transporte e a implantação em áreas remotas.
         </p>
         <p>
-         <em>Fonte:G1 Globo</em>
+         <em>Fonte: G1 Globo</em>
         </p>
+
+            </article>
+            <article>
+                <h2>Afinal, quem inventou o avião?</h2>
+                <h3>A resposta provavelmente não é a que você pensou</h3>
+                <p>
+                    O brasileiro Alberto Santos Dumont fez o primeiro voo da história homologado pela Federação Aeronáutica Internacional.
+                </p>
+                <p>
+                    Em 12 de novembro de 1906, em frente a uma multidão em Paris, ele cruzou o campo de Bagatelle a bordo do 14-bis, confirmando que uma máquina mais pesada que o ar era de fato capaz de voar.
+                </p>
+                <p>
+                    A essa altura ele já era celebrado como pioneiro da aviação na Europa. Vivia cruzando Paris de balão, tinha ganhado um prêmio por ter voado com um dirigível em volta da torre Eiffel e estampado capa de jornal.
+                </p>
+                <p>
+                    Nada mais natural, então, do que dizer que foi ele que inventou o avião, certo? Não é tão simples assim.
+                </p>
+                <p>
+                    A polêmica já dura mais de um século: o Brasil considera Santos Dumont o pai da aviação, enquanto os Estados Unidos defendem — e espalham para o mundo — que o título é dos americanos Orville e Wilbur Wright, os irmãos Wright.
+                </p>
+                <p><em>Fonte: BBC Brasil</em></p>
+            </article>
+        </main>
+        
+
+        <footer>
+            <ul>
+                <li><a href="https://www.instagram.com/cristiano/" >Instgram</a></li>
+                <li><a href="https:/www.facebook.com" >Facebook</a></li>
+                <li><a href="https://x.com/elonmusk" >X</a></li>
+            </ul>
+        </footer>
 
     </body>
