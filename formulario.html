@@ -1,0 +1,95 @@
+<!--Prática. Você deverá implementar um formulário de pesquisa de satisfação. Esse
+
+formulário é dividido em duas partes.
+
+a. Dados pessoais, onde o cliente deverá fornecer seu nome, e-mail, e telefone para contato.
+
+b. Pesquisa, onde o cliente deverá responder a três perguntas. ~
+Duas delas utilizarão radio buttons como campo de resposta, e uma utilizará menu de dropdown. 
+Antes do botão de envio, inclua um checkbox indicando se o cliente autoriza compartilhar sua resposta 
+com terceiros.
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de Pesquisa</title>
+    </head>
+    <body>
+      <p> <h1><em>TechGlobal</em></h1>
+        <h2>Maior empresa de tecnologia da América Latina</h2></p> 
+
+        <p>--------------------------------------------------------------------------------</p>
+
+        <h1>Pesquisa de satisfação</h1>
+
+        <form action="pagina_destino.html" method="post">
+            <section>
+            <h2>Dados Pessoais</h2>
+            
+            <p><label for="name">Nome:</label>
+            <input type="text" placeholder="Seu Nome" id="name"/></p> 
+
+          <p><label for="e-mail">E-mail:</label>
+            <input type="email" placeholder="Seu E-mail" id="e-mail"/>  </p> 
+            
+           <p> <label for="numero">Telefone:</label>
+            <input type="tel" placeholder="Seu Telefone" id="numero"/> </p>
+
+              <p>--------------------------------------------------------------------------------</p>
+
+          
+            </section>
+
+            <section>
+
+            <h2>Dados da Pesquisa</h2>
+
+            <p>
+           Como você avalia sua experiência geral com nosso serviço?
+                <input type="radio" id="Péssima" name="nivel-satisfacao">
+                <label for="Péssima">Péssima </label>
+                <input type="radio" id=" Ruim" name="nivel-satisfacao">
+                <label for=" Ruim">Ruim</label>
+                  <input type="radio" id="Regular" name="nivel-satisfacao">
+                <label for="Regular">Regular</label>
+                  <input type="radio" id="Boa" name="nivel-satisfacao">
+                <label for=" Boa">Boa</label>
+                  <input type="radio" id=" Excelente" name="nivel-satisfacao">
+                <label for=" Excelente">Excelente</label>
+            </p>
+            <p>
+                Você recomendaria nosso serviço para amigos ou familiares?
+              <input type="radio" id="sim" name="recomendaria">
+              <label for="sim">Sim</label>
+               <input type="radio" id="talvez" name="recomendaria">
+              <label for="talvez">Talvez</label>
+               <input type="radio" id="não" name="recomendaria">
+              <label for="não">Não</label>
+            </p>
+            <p>
+               <label for="qualidade"> Qual o principal motivo da sua avaliação?</label>
+               <select id="qualidade" name="motivo-avaliacao" >
+                <option>Preço</option>
+                 <option>Qualidade</option>
+                  <option>Atendimento</option>
+                   <option>Facilidade de uso</option>
+                    <option>Rapidez</option>
+                     <option>Outro</option>
+
+                  
+                    </select>
+           
+        </p>
+         <p>  <input type="checkbox" id="compartilhar-dados">
+                     <label for="compartilhar-dados">Autorizo compartilhar meus dados com terceiros.</label>
+              
+               </p>
+
+            </section>
+
+            <input type="submit" value="Enviar"></input>
+
+        </form>
+    </body>
+</html>
