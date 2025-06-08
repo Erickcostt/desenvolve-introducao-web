@@ -1,0 +1,21 @@
+/*
+Dada a cor definida no formato RGBrgb(219, 78, 68) , 
+calcule duas possíveis variações, uma 15% mais clara, outra 15% mais escura. 
+Coloque as cores lado-a-lado e compare os resultados.
+/*
+
+
+/* Cor original */
+.cor-original {
+  background-color: rgb(219, 78, 68);
+}
+
+/* 15% mais clara */
+.mais-clara {
+  background-color: rgb(252, 90, 78);
+}
+
+/* 15% mais escura */
+.mais-escura {
+  background-color: rgb(186, 66, 58);
+}
