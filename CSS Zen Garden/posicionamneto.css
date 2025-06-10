@@ -1,0 +1,148 @@
+/*Digite sua resposta no prompt. Seu trabalho será salvo automaticamente e você pode retornar para completar sua resposta a qualquer momento antes da data de vencimento. (Sunday, Dec 31, 2028 22:00 BRST). Depois de enviar sua resposta, você não poderá editá-la..
+
+O prompt para esta seção
+Exercícios - Posicionamento
+
+ 
+
+O foco dessa atividade será reposicionar os elementos da nossa página!
+
+1. Defina o elemento .page-wrapper como referência para posicionamento.
+
+2. Faça com que o painel .explanation ocupe 60% da largura disponível, mas crie um
+
+espaçamento a direita de 35% utilizando margin .
+
+- Adicione uma borda à direita do painel de 1px, com a cor #1f295c
+
+- Adicione um espaçamento interno de 2% no lado direito do painel.
+
+3. Agora mova o menu de designs para a direita da página, ocupando o espaço em branco
+
+deixado pelo elemento .explanation .
+
+- Faça-o iniciar na parte superior da página, após a parte de introdução (por exemplo,
+
+aplicando top: 560px ).
+
+- Faça-o iniciar após o elemento .explanation (por exemplo, aplicando left: 62% ).
+
+- Adicione um espaçamento interno horizontal de 2% no menu para centralizá-lo.
+
+Envie nessa atividade com o link do projeto no GitHub.*/
+
+
+.main footer {
+    margin: 4%;
+}
+
+.main footer a {
+    border: solid 2px #FF8C42; 
+    padding: 0.5em;
+    display: inline-block;
+    color: #FDF6EC;
+    background-color: #1A1A2E;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+    color: #FDF6EC;
+}
+
+body {
+    color: #FDF6EC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #0F3460;
+}
+
+#zen-intro {
+    height: 550px;
+}
+
+#design-archives {
+    display: none;
+}
+
+#zen-intro header {
+    background-color: #16213E;
+    color: #FF8C42;
+}
+
+p {
+    text-indent: 1em;
+}
+
+#zen-intro header, h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #FF8C42;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#zen-intro, h1, h2 {
+    display: inline-block;
+}
+
+#zen-intro header, h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #FF8C42;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #F7C59F;
+}
+
+a {
+    color: #F7C59F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF8C42;
+}
+
+.summary {
+    text-align: right; 
+    color: #FDF6EC;
+}
+
+.main p {
+    line-height: 1.8;
+}
+
+abbr {
+    font-variant: small-caps;
+    color: #FF8C42;
+}
+
+.page.wrapper { 
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.explanation {
+    margin-right: 35%;
+    max-width: 60%;
+    border-right: 1px solid #F7C59F;
+    padding-right: 2%;
+    color: #FDF6EC;
+}
+
+.design-selection {
+    position: absolute;
+    top: 540px;
+    left: 62%;
+    padding: 0 2%;
+    color: #FDF6EC;
+}
