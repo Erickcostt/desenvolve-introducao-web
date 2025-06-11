@@ -1,0 +1,273 @@
+.main footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 4%;
+}
+
+.main footer a {
+    border: solid 2px #FF8C42;
+    padding: 0.5em;
+    display: inline-block;
+    color: #FDF6EC;
+    background-color: #1A1A2E;
+    width: 100px;
+    text-align: center;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+    color: #FDF6EC;
+}
+
+body {
+    color: #FDF6EC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0F3460;
+}
+
+
+#zen-intro {
+    height: 550px;
+}
+
+#design-archives {
+    display: none;
+}
+
+#zen-intro header {
+    background-color: #16213E;
+    color: #FF8C42;
+}
+
+p {
+    text-indent: 1em;
+}
+
+#zen-intro header,
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #FF8C42;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#zen-intro,
+h1,
+h2 {
+    display: inline-block;
+}
+
+#zen-intro header,
+h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #FF8C42;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #F7C59F;
+}
+
+a {
+    color: #F7C59F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF8C42;
+}
+
+.summary {
+    text-align: right;
+    color: #FDF6EC;
+}
+
+.main p {
+    line-height: 1.8;
+}
+
+abbr {
+    font-variant: small-caps;
+    color: #FF8C42;
+}
+
+.page.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.explanation {
+    margin-right: 35%;
+    max-width: 60%;
+    border-right: 1px solid #F7C59F;
+    padding-right: 2%;
+    color: #FDF6EC;
+}
+
+.design-selection {
+    position: absolute;
+    top: 470px;
+    left: 62%;
+    padding: 0 2%;
+    color: #FDF6EC;
+
+}
+
+.benefits {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.benefits>p {
+    width: 70%;
+    order: 1;
+    margin: 0 1em;
+}
+
+.benefits>h3 {
+    width: 30%;
+    order: 2;
+    text-align: center;
+}
+
+.participation {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: none;
+}
+
+.participation>p {
+    width: 50%;
+    order: 1;
+    margin: 0 1em;
+}
+
+.participation>h3 {
+    width: 50%;
+    order: 2;
+    text-align: center;
+}
+
+a {
+    color: #FF8C42;           
+    font-weight: bold;       
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #FFA96D;          
+}
+
+a:visited {
+    color: #C76A00;         
+    font-weight: normal;
+}
+
+
+.main p:first-of-type::first-letter {
+    font-size: 300%;         
+    font-family: 'Georgia', serif; 
+    float: left;              
+    line-height: 1;            
+    padding-right: 0.2em;      
+
+}
+  .design-selection li { 
+    border-top: 2px solid black;  
+}
+
+.design-selection li:last-child {
+
+    border-bottom: 2px solid black;
+}
+
+
+/*Vamos deixar a nossa página do CSS Zen Garden responsiva a dispositivos móveis! Para isso iremos implementar as seguintes modificações.
+
+1. Crie uma media query para telas inferiores a 768 pixels; nós a utilizaremos como layout mobile.
+
+2. Realize as seguintes mudanças para p layout mobile
+
+Remova o reposicionamento do menu de design para que ele se encaixe no mesmo lugar de antes.
+
+Remova a borda lateral ao lado da div
+
+mude a orientação do Flexbox presente no elemento   para vertical, e organize os elementos de forma empilhada
+
+Remova a altura fixa presente no cabeçalho da página
+
+Remova também o espaçamento inicial dado a cada um dos parágrafos
+
+Vamos Deixar nossa página mais adequada a mídia de impressão também!
+
+1. Crie uma media query para meios impressos, mas sem qualquer tipo de restrição relacionada a tela
+
+2. Adicione as seguintes modificações a essa media query
+
+Altere o estilo da fonte para uma serifada, como times .
+
+Inverta as cores do banner para que o fundo fique claro (assim como o restante da página)
+
+Envie nessa atividade o arquivo zen_garden.zip
+
+*/
+
+
+@media screen and ( max-width: 768px){
+ .design-selection {
+        position: static;
+        width: 100%;
+    }
+
+    .explanation {
+        width: 100%;
+        border-right: none;
+    }
+
+    #zen-intro {
+        height: auto;
+    }
+
+    p {
+        text-indent: 0;
+    }
+
+    .benefits,
+    .participation {
+        flex-direction: column;
+    }
+
+    .benefits > p,
+    .benefits > h3,
+    .participation > p,
+    .participation > h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media print {
+    html {
+        font-family: 'Times New Roman', Times, serif;
+    }
+     #zen-intro header {
+        background-color: #FDF6EC;
+        color: #16213E;
+}
