@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Open+Sans&display=swap');
+
+
+:root {
+    --cor-principal: #6A1B9A;    
+    --cor-secundaria: #F3E5F5;   
+    --cor-destaque: #FF6F61;     
+    --cor-sombra: rgba(106, 27, 154, 0.15);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    line-height: 1.6;
+    padding-top: 70px;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--cor-principal);
+    text-shadow: 1px 1px 2px var(--cor-sombra);
+}
+
+
+a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-destaque);
+}
+
+
+nav {
+    background-color: var(--cor-principal);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: #002244;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    transition: color 0.3s ease;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {
+    color: var(--cor-destaque);
+}
+
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0 8px 20px var(--cor-sombra);
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#perfil {
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 50%;
+    background: white;
+}
+
+#perfil img {
+    border-radius: 50%;
+    border: 5px solid var(--cor-principal);
+    margin: 15px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+#perfil img:hover {
+    transform: scale(1.05);
+}
+
+#contato {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #444;
+}
+
+#sobre {
+    max-width: 900px;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+
+#educacao, #certificacoes, #experiencia, #habilidades {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 6px 18px var(--cor-sombra);
+    border-radius: 12px;
+}
+
+section {
+    border-left: 6px solid var(--cor-destaque);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease;
+}
+
+section:hover {
+    border-color: var(--cor-principal);
+}
+
+#habilidades ul {
+    list-style: square inside;
+    color: #555;
+}
+
+
+footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 30px 10px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.25);
+}
+
+footer a {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    #apresentacao {
+        flex-direction: column;
+    }
+
+    #perfil {
+        order: 1;
+    }
+
+    #perfil img {
+        width: 220px;
+    }
+
+    #contato {
+        order: 3;
+    }
+
+    #sobre {
+        order: 2;
+    }
+}
+
+
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #apresentacao {
+        flex-direction: column;
+        margin: 10px 15px;
+    }
+
+    #perfil img {
+        width: 180px;
+    }
+
+    #sobre {
+        margin-top: 20px;
+    }
+}
